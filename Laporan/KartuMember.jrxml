@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="378" pageHeight="413" orientation="Landscape" columnWidth="378" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="72c193c1-e697-497a-a64d-d42e51c1c50f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parIdMember" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM TB_MEMBER WHERE ID_MEMBER=$P{parIdMember} ORDER BY ID_MEMBER ASC]]>
+	</queryString>
+	<field name="ID_MEMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NAMA_MEMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="JNS_KEL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TGL_DAFTAR" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NO_TELP" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ALAMAT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="190" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="1" width="379" height="189" forecolor="#990000" backcolor="#00CCCC" uuid="75250b39-2867-4865-9ee1-3205a80c22ba"/>
+				<staticText>
+					<reportElement mode="Transparent" x="0" y="20" width="90" height="20" forecolor="#CC0000" uuid="7bc85b7d-bf52-4143-8bb6-c139d1a2f4fd"/>
+					<box leftPadding="5" rightPadding="1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Britannic Bold" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[MARKET]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="0" y="40" width="377" height="20" forecolor="#009999" backcolor="#003399" uuid="83685d17-76f8-4393-be2e-28ac7e0ca0ae"/>
+				</rectangle>
+				<staticText>
+					<reportElement mode="Transparent" x="0" y="40" width="379" height="20" forecolor="#FFFFFF" uuid="1d239615-5058-4f2d-bcdb-eb33f427dbfc"/>
+					<box leftPadding="5" rightPadding="1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial Narrow" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[KARTU MEMBER]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="30" y="73" width="269" height="20" forecolor="#000000" uuid="3f2cefb3-dc92-49f4-8a73-268437d2e56f"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial Narrow" size="14" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ID_MEMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="30" y="93" width="269" height="20" forecolor="#000000" uuid="066153b1-4ce3-43e9-b703-0aa0f37faf3f"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial Narrow" size="14" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{NAMA_MEMBER}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Transparent" x="321" y="149" width="56" height="40" forecolor="#CC0000" uuid="52789c6b-73a1-4b0d-be1b-e60f47288a3a"/>
+					<box leftPadding="5" rightPadding="1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Agency FB" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ASUS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="265" y="149" width="56" height="40" forecolor="#003399" uuid="a9b937e8-1893-4d05-bde7-f9e74880fc39"/>
+					<box leftPadding="5" rightPadding="1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Agency FB" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[LENOVO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="209" y="149" width="56" height="40" forecolor="#CC0000" uuid="09a0374b-2e38-4b0d-bd0f-28bd2ffd00ae"/>
+					<box leftPadding="5" rightPadding="1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Agency FB" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SAMSUNG]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="153" y="149" width="56" height="40" forecolor="#003399" uuid="3f1b35d3-b422-4da8-98d6-40519ecc4b7f"/>
+					<box leftPadding="5" rightPadding="1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Agency FB" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOSHIBA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="0" y="149" width="153" height="20" forecolor="#000000" uuid="a4943bfa-eba7-4ed3-b7a7-a0c1468f50b5"/>
+					<box leftPadding="5" rightPadding="1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial Narrow" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[JL. MANDUREREJO N0.412 A]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="0" y="169" width="153" height="20" forecolor="#000000" uuid="94f97a34-4e18-496e-9a3d-5e0b19674c5c"/>
+					<box leftPadding="5" rightPadding="1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial Narrow" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[KAJEN]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="30" y="113" width="269" height="20" uuid="d0e7bae0-f197-490d-9be3-7de255193de9"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial Narrow" size="14" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{NO_TELP}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="352" y="46" width="19" height="74" forecolor="#FF0000" uuid="be496fd7-ecf4-4f45-a163-b0a107705066"/>
+					<box topPadding="1" leftPadding="6"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="CentSchbkCyrill BT" size="26" isBold="true" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[J]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="342" y="53" width="19" height="40" forecolor="#FF0000" uuid="ac8f61d0-c533-4abc-af39-3de9b8331773"/>
+					<box leftPadding="6" bottomPadding="0"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="CentSchbkCyrill BT" size="26" isBold="true" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[L]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement mode="Transparent" x="2" y="0" width="377" height="20" forecolor="#003399" uuid="c0acc739-2d5a-402d-94d4-a627d522e4e5"/>
+				<box leftPadding="5" rightPadding="1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Britannic Bold" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LUBADA JAYA]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d6b1b25d-7537-4a6d-b6af-b985f86e3917">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parId" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM TB_MEMBER WHERE ID_MEMBER=$P{parId}]]>
+	</queryString>
+	<field name="ID_MEMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NAMA_MEMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="JNS_KEL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TGL_DAFTAR" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NO_TELP" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ALAMAT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="308" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="34" y="0" width="265" height="144" uuid="45b221bc-31e8-4c26-aa01-08e5b2173104"/>
+				<imageExpression><![CDATA["C:\\Users\\User\\Downloads\\member1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="44" y="-13" width="43" height="84" forecolor="#FFFFFF" uuid="c660b295-95b2-4aa0-ad0a-2680210a94f0"/>
+				<box topPadding="1" leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="CentSchbkCyrill BT" size="26" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[J]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="-2" width="19" height="40" forecolor="#FFFFFF" uuid="983b0b85-d1f8-40ea-823d-de0315ad2e14"/>
+				<box leftPadding="6" bottomPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="CentSchbkCyrill BT" size="26" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[L]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="87" y="0" width="207" height="38" forecolor="#FFFFFF" uuid="d93e8600-6c27-476c-acaa-3e554e764b0e"/>
+				<box leftPadding="6" bottomPadding="0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="CentSchbkCyrill BT" size="26" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Lubada Jaya]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="51" y="61" width="183" height="38" forecolor="#FFFFFF" uuid="677107ab-a17e-47db-9aff-f91c6bba53a8"/>
+				<textElement>
+					<font fontName="Agency FB" size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parId}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="221" y="112" width="78" height="32" forecolor="#FF0000" backcolor="#000000" uuid="95a61f56-67c7-4c00-9ad4-9fab8cebb8f0"/>
+				<box leftPadding="6" bottomPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Agency FB" size="20" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[SAMSUNG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="34" y="112" width="65" height="32" forecolor="#FFFFFF" backcolor="#000000" uuid="e7fb81a2-f257-42ea-8ca4-0dfec0951751"/>
+				<box leftPadding="6" bottomPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Agency FB" size="20" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ASUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="175" y="112" width="46" height="32" forecolor="#FFFFFF" backcolor="#000000" uuid="663f473c-7da2-46ba-ac70-e4c618bad3ee"/>
+				<box leftPadding="6" bottomPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Agency FB" size="20" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[DELL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="98" y="112" width="77" height="32" forecolor="#FF0000" backcolor="#000000" uuid="921731f2-487e-4d46-ad41-495fc024011b"/>
+				<box leftPadding="6" bottomPadding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Agency FB" size="20" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[TOSHIBA]]></text>
+			</staticText>
+			<image>
+				<reportElement mode="Opaque" x="0" y="152" width="265" height="144" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="92db5134-d903-4586-8fa4-12439f78c933"/>
+				<box>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<imageExpression><![CDATA[new com.barcodelib.barcode.BarcodeJasperRenderer(com.barcodelib.barcode.BarcodeJasperFactory.createLinear(22, $F{ID_MEMBER}))]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Opaque" x="34" y="249" width="265" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="765f1447-6cb0-4a73-9ae0-d3775c77b876"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Agency FB" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NAMA_MEMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
